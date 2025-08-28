@@ -1,14 +1,15 @@
 import React from 'react'
 
-const title = ({name, subtitle}) => {
-    console.log(name, subtitle);
-  return (
-    <>
-        <div>{name}</div>
-        {subtitle ? <h1>{subtitle}</h1> : <h2>no subtitle passed damn it</h2>}
-    </>
-    
-  )
+const Title = ({ name, subTitle }) => {
+    console.log(name, subTitle)
+    return (
+        <>
+            <div>{name}</div>
+            {subTitle ? <h1>{subTitle}</h1> : <h2>no sub subtitle passed</h2>}
+
+        </>
+
+    )
 }
 
-export default title
+export default Title
